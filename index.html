@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.4.5/dist/tailwind.min.css">
-</head>
-<body>
-  <div class="py-2 text-center text-large">bluetooth web demo</div>
-  <button id="request" class="mx-auto px-1 py-2 text-blue my-2">request bluetooth</button>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@1.4.5/dist/tailwind.min.css"
+    />
+    <style>
+      button {
+        border: solid 1px grey;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="py-2 text-center text-large">bluetooth web demo</div>
+    <div class="buttons flex column ">
+      <button id="request" class="mx-auto px-1 py-2 text-blue my-2">
+        request bluetooth
+      </button>
+
+      <button id="button2" class="mx-auto px-1 py-2 text-blue my-2">
+        request devices
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
