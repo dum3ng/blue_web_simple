@@ -4,7 +4,7 @@ const requestButton = $("#request");
 
 requestButton.addEventListener("click", () => {
   navigator.bluetooth
-    .requestDevice()
+    .requestDevice({acceptAllDevices: true})
     .then((device) => console.log("devices:", device));
 });
 
